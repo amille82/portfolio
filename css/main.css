@@ -1,0 +1,253 @@
+html,
+body {
+	height: 100%;
+}
+
+img,
+video,
+embed,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+h1 {
+  font-family: inherit;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 61px;
+  line-height: 81px;
+  margin-top: 27px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: inherit;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 41px;
+  line-height: 54px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+h3 {
+  font-family: inherit;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 27px;
+  line-height: 27px;
+  margin-top: 27px;
+  margin-bottom: 0px;
+}
+h4 {
+  font-family: inherit;
+  font-weight: 600;
+  font-style: inherit;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 27px;
+  margin-bottom: 0px;
+}
+h5 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 27px;
+  margin-bottom: 0px;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 27px
+  }
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+a {
+  color: #268ED9;
+}
+.gridlover-grid {
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+  background-position: left -1px;
+  background-repeat: repeat;
+  background-size: 27px 27px;
+}
+.gridlover-grid body {
+  box-shadow: 1px 0px 0px hsla(200, 100%, 50%, .3), -1px 0px 0px hsla(200, 100%, 50%, .3);
+}
+
+.grid-list {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	text-align: justify;
+}
+
+.grid-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.grid-list__item,
+.grid-list__placeholder {
+	display: inline-block;
+	width: 22%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.l-home .site-masthead {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+}
+
+.site-masthead__toggle {
+	position: relative;
+	z-index: 20;
+	background-color: #fff;
+}
+
+.site-masthead__menu {
+	position: fixed;
+	max-height: 0;
+	overflow: hidden;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.75);
+	opacity: 0;
+	transition: opacity .25s;
+}
+
+.show-nav .site-masthead__menu {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 1;
+	z-index: 10;
+	max-height: 100%;
+}
+
+.site-masthead__primary {
+	background: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.site-content {
+	position: relative;
+	z-index: 2;
+}
+
+.l-home .site-content {
+	height: 100%;
+}
+
+.full-hero {
+	position: relative;
+	z-index: 1;
+	height: 90%;
+	background: url('../images/header.png') center center no-repeat;
+	background-size: cover;
+}
+
+.full-hero:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.full-hero__content {
+	position: absolute;
+	bottom: 10vh;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+}
+
+.knockout {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: .5em;
+	font-size: 35px;
+	color: #ffffff;
+}
+
+.featured-list__item {
+	overflow: hidden;
+}
+
+.featured-list__item,
+.featured-item__link {
+	position: relative;
+}
+
+.featured-item__link {
+	display: block;
+	padding: 100px 0;
+	background: url('../images/head.png') center center no-repeat;
+	background-size: cover;
+}
+
+
+
+.featured-item__link:link,
+.featured-item__link:active,
+.featured-item__link:visited {
+	color: #ffffff;
+}
+
+.featured-item__link:hover,
+.featured-item__link:focus {
+	color: orange;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+.featured-item__body {
+	position: relative;
+	z-index: 10;
+	background-color: transparent;
+}
+
+.featured-item__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
